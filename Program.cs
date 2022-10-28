@@ -10,10 +10,13 @@ namespace Calculadora
         public static decimal resultado = 0;
         static void Main(string[] args)
         {
-            Console.WriteLine("Seja Bem-vindo à Calculadora!");
+            
             bool tentarDnovo = true;
             while (tentarDnovo == true)
             {
+                Console.Clear();
+                
+                Console.WriteLine("Seja Bem-vindo à Calculadora!");
                 receberopcao();
 
                 if (opcao == 1)
@@ -23,6 +26,9 @@ namespace Calculadora
                     resultado = Somar(numero1, numero2);
 
                     Console.WriteLine("Resultado: " + resultado);
+                    Console.WriteLine("Presione qualquer tecla para retornar ao menu!");
+                    Console.ReadKey();
+                    
                 }
                 else if (opcao == 2)
                 {
@@ -31,6 +37,8 @@ namespace Calculadora
                     resultado = subtrair(numero1, numero2);
 
                     Console.WriteLine("Resultado: " + resultado);
+                    Console.WriteLine("Presione qualquer tecla para retornar ao menu!");
+                    Console.ReadKey();
                 }
                 else if (opcao == 3)
                 {
@@ -39,6 +47,8 @@ namespace Calculadora
                     resultado = multiplicar(numero1, numero2);
 
                     Console.WriteLine("Resultado: " + resultado);
+                    Console.WriteLine("Presione qualquer tecla para retornar ao menu!");
+                    Console.ReadKey();
                 }
                 else if (opcao == 4)
                 {
@@ -47,6 +57,8 @@ namespace Calculadora
                     resultado = dividir(numero1, numero2);
 
                     Console.WriteLine("Resultado: " + resultado);
+                    Console.WriteLine("Presione qualquer tecla para retornar ao menu!");
+                    Console.ReadKey();
                 }
                 else if (opcao == 5)
                 {
@@ -56,6 +68,8 @@ namespace Calculadora
                 else
                 {
                     Console.WriteLine("Essa opção não existe!!");
+                    Console.WriteLine("Presione qualquer tecla para retornar ao menu!");
+                    Console.ReadKey();
                 }
             }
 
